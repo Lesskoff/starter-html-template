@@ -61,7 +61,11 @@ gulp.task('browsersync', function() {
         server: {
             baseDir: 'app'
         },
-    });
+        notify: false,
+        // open: false,
+        // online: false, // Work Offline Without Internet Connection
+        // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+    })
 });
 
 // Работа с JS
@@ -108,6 +112,7 @@ gulp.task('spritemade', function() {
     spriteData.css.pipe(gulp.dest('app/scss/')); // путь, куда сохраняем стили
 });
 gulp.task('sprite', ['cleansprite', 'spritemade']);
+
 // Слежение
 gulp.task('watch', ['browsersync', 'scss', 'scripts'], function() {
     gulp.watch('app/scss/**/*.scss', ['scss']);
@@ -133,7 +138,6 @@ gulp.task('img', function() {
 });
 
 // Сборка проекта
-
 gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
     var buildCss = gulp.src('app/css/*.css')
         .pipe(gulp.dest('product/css'));
