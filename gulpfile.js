@@ -145,6 +145,10 @@ gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
     var buildFonts = gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('product/fonts'));
 
+    // Font-awesome fonts
+    var buildFontAwesome = gulp.src('app/libs/fontawesome/webfonts/**/*')
+        .pipe(gulp.dest('product/libs/fontawesome/webfonts'));
+
     var buildJs = gulp.src('app/js/**.js')
         .pipe(gulp.dest('product/js'));
 
