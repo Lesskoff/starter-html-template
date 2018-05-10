@@ -1,6 +1,6 @@
 # Starter HTML Template
 
-This is template for front-end projects (HTML, CSS, JS) with Bootstrap 4 (grid & reboot), Gulp, Pug, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify and Rsync. The template contains a .htaccess file with caching rules for web server.
+This is template for front-end projects (HTML, CSS, JS) with Bootstrap 4 (grid & reboot), Font-Awesome 5, Gulp, Pug, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify and Rsync. The template contains a .htaccess file with caching rules for web server.
 
 #### This template is based on two open-source templates
 
@@ -22,7 +22,7 @@ https://github.com/FARCER/work_template
 
 # Стартовый HTML Шаблон
 
-Это шаблон для фронт-энд проектов (HTML, CSS, JS) с Bootstrap 4 (grid & reboot), Gulp, Pug, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify and Rsync. Шаблон содержит .htaccess-файл с кешированием для веб-серверов.
+Это шаблон для фронт-энд проектов (HTML, CSS, JS) с Bootstrap 4 (grid & reboot), Font-Awesome 5, Gulp, Pug, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify and Rsync. Шаблон содержит .htaccess-файл с кешированием для веб-серверов.
 
 #### Этот шаблон основан на двух других html-шаблонах, взятых из интернета:
 
