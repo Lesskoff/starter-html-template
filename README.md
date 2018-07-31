@@ -62,7 +62,7 @@ styles structure based on this article by FreeCodeCamp: [https://medium.freecode
 
 Это шаблон для фронт-энд проектов (HTML, CSS, JS) с Bootstrap 4 (grid & reboot), Font-Awesome 5, Gulp, Pug, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify and Rsync. Шаблон содержит .htaccess-файл с кешированием для веб-серверов.
 
-#### Этот шаблон основан на двух других html-шаблонах, взятых из интернета:
+#### Стартовый шаблон основан на следующих источниках:
 
 [https://github.com/agragregra/OptimizedHTML-4](https://github.com/FARCER/work_template)
 
