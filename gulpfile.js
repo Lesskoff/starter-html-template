@@ -1,4 +1,4 @@
-var syntax        = 'sass'; // Syntax: sass or scss;
+var cssSyntax        = 'scss'; // Syntax: sass or scss;
 
 var gulp           = require('gulp'),
     pug            = require('gulp-pug'),
@@ -11,7 +11,7 @@ var gulp           = require('gulp'),
     del            = require('del'),
     imagemin       = require('gulp-imagemin'),
     pngquant       = require('imagemin-pngquant'),
-    scss           = require('gulp-sass'),
+    sass           = require('gulp-sass'),
     cache          = require('gulp-cache'),
     spritesmith    = require("gulp.spritesmith"),
     plumber        = require("gulp-plumber"),
@@ -19,13 +19,13 @@ var gulp           = require('gulp'),
     newer          = require("gulp-newer"),
     autoprefixer   = require('gulp-autoprefixer');
 
-// Работа с Scss
-gulp.task('scss', function() {
+// Работа с Sass
+gulp.task(cssSyntax, function() {
     return gulp.src([
-            'app/scss/main.scss',
+            'app/'+cssSyntax+'/main.'+cssSyntax+'',
         ])
         .pipe(plumber())
-        .pipe(scss({
+        .pipe(sass({
             'include css': true
         }))
 
@@ -98,24 +98,24 @@ gulp.task('spritemade', function() {
         gulp.src('app/img/sprite/*.*')
         .pipe(spritesmith({
             imgName: 'sprite.png',
-            cssName: '_sprite.scss',
+            cssName: '_sprite.'+cssSyntax+'',
             padding: 15,
-            cssFormat: 'scss',
+            cssFormat: cssSyntax,
             algorithm: 'binary-tree',
-            cssTemplate: 'scss.template.mustache',
+            cssTemplate: cssSyntax+'.template.mustache',
             cssVarMap: function(sprite) {
                 sprite.name = 's-' + sprite.name;
             }
         }));
 
     spriteData.img.pipe(gulp.dest('app/img/sprite/')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('app/scss/')); // путь, куда сохраняем стили
+    spriteData.css.pipe(gulp.dest('app/'+cssSyntax+'/')); // путь, куда сохраняем стили
 });
 gulp.task('sprite', ['cleansprite', 'spritemade']);
 
 // Слежение
-gulp.task('watch', ['browsersync', 'scss', 'scripts'], function() {
-    gulp.watch('app/scss/**/*.scss', ['scss']);
+gulp.task('watch', ['browsersync', cssSyntax, 'scripts'], function() {
+    gulp.watch('app/'+cssSyntax+'/**/*.'+cssSyntax+'', [cssSyntax]);
     gulp.watch('app/pug/**/*.pug', ['pug']);
     gulp.watch('app/*.html', browsersync.reload);
     gulp.watch(['app/js/*.js', '!app/js/libs.min.js', '!app/js/jquery.js'], ['scripts']);
@@ -138,7 +138,7 @@ gulp.task('img', function() {
 });
 
 // Сборка проекта
-gulp.task('build', ['clean', 'img', 'scss', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', cssSyntax, 'scripts'], function() {
     var buildCss = gulp.src('app/css/*.css')
         .pipe(gulp.dest('product/css'));
 

@@ -16,6 +16,43 @@ https://github.com/FARCER/work_template
 
 3. Run the template: **gulp**.
 
+### Structure (it will be updates from time to time)
+
+## The Styles structure (it just 7 folders):
+Based on this [article by FreeCodeCamp](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f): 
+
+1. **_base:_** in here, put all your boilerplate code. By boilerplate, I mean all CSS code you’re gonna write each time you’ll start a new project. For example: typography rules, animations, utilities (by utilities, I mean classes like *margin-right-large* , *text-center* , …) and so on.
+
+2. **_components:_** The name is explicit here. This folder contains all the components used to build your pages like your buttons, forms, swipers, popups, and so on.
+
+3. **_layout:_** used to layout the different parts of your page, that is to say, your header, footer, navigation, section, your own grid, and more.
+
+4. **_pages:_**: You may sometimes have a page that has its own specific style, that stands out from what you do usually. Then put your style in the *pages* folder.
+
+5. **_themes:_**: If you have different themes for your app (dark mode, admin, and so on) put them in this folder.
+
+6. **_abstracts:_**: Put all your functions here, along with variables and mixins. In short, all your helpers.
+
+7. **_vendors:_**: what would be an app or a project without external libraries? Put in the *vendors* folder all files that don’t depend on you. You may want to add your Font Awesome file, Bootstrap, and stuff like that in here.
+
+#### Example of main.sass (scss) file:
+
+```sass
+@import abstracts/variables;
+@import abstracts/functions;
+@import base/reset;
+@import base/typography;
+@import base/utilities;
+@import components/button;
+@import components/form;
+@import components/user-navigation;
+@import layout/header;
+@import layout/footer;
+...
+```
+
+## The Pug-files structure is similar to the Styles structure
+
 ---
 
 #### На русском языке:
@@ -37,3 +74,22 @@ https://github.com/FARCER/work_template
 2. Установить Node модули: **npm i**;
 
 3. Запуск шаблона: **gulp**.
+
+### Структура (будет обновляться время от времени)
+
+## Структура стилей (просто 7 папок):
+Основано на этой [статье от FreeCodeCamp](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f): 
+
+1. **_base:_** in here, put all your boilerplate code. By boilerplate, I mean all CSS code you’re gonna write each time you’ll start a new project. For example: typography rules, animations, utilities (by utilities, I mean classes like *margin-right-large* , *text-center* , …) and so on.
+
+2. **_components:_** The name is explicit here. This folder contains all the components used to build your pages like your buttons, forms, swipers, popups, and so on.
+
+3. **_layout:_** used to layout the different parts of your page, that is to say, your header, footer, navigation, section, your own grid, and more.
+
+4. **_pages:_**: You may sometimes have a page that has its own specific style, that stands out from what you do usually. Then put your style in the *pages* folder.
+
+5. **_themes:_**: If you have different themes for your app (dark mode, admin, and so on) put them in this folder.
+
+6. **_abstracts:_**: Put all your functions here, along with variables and mixins. In short, all your helpers.
+
+7. **_vendors:_**: what would be an app or a project without external libraries? Put in the *vendors* folder all files that don’t depend on you. You may want to add your Font Awesome file, Bootstrap, and stuff like that in here.
