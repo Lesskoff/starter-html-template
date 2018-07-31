@@ -2,11 +2,13 @@
 
 This is template for front-end projects (HTML, CSS, JS) with Bootstrap 4 (grid & reboot), Font-Awesome 5, Gulp, Pug, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify and Rsync. The template contains a .htaccess file with caching rules for web server.
 
-#### This template is based on two open-source templates
+#### The starter-template is based on these sources:
 
-https://github.com/agragregra/OptimizedHTML-4
+[https://github.com/agragregra/OptimizedHTML-4](https://github.com/FARCER/work_template)
 
-https://github.com/FARCER/work_template
+[https://github.com/FARCER/work_template](https://github.com/FARCER/work_template)
+
+styles structure based on this article by FreeCodeCamp: [https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f)
 
 ## How to use
 
@@ -19,7 +21,6 @@ https://github.com/FARCER/work_template
 ### Structure (it will be updates from time to time)
 
 ## The Styles structure (it just 7 folders):
-Based on this [article by FreeCodeCamp](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f): 
 
 1. **_base:_** in here, put all your boilerplate code. By boilerplate, I mean all CSS code you’re gonna write each time you’ll start a new project. For example: typography rules, animations, utilities (by utilities, I mean classes like **margin-right-large** , **text-center** , …) and so on.
 
@@ -63,9 +64,11 @@ Based on this [article by FreeCodeCamp](https://medium.freecodecamp.org/how-to-g
 
 #### Этот шаблон основан на двух других html-шаблонах, взятых из интернета:
 
-https://github.com/agragregra/OptimizedHTML-4
+[https://github.com/agragregra/OptimizedHTML-4](https://github.com/FARCER/work_template)
 
-https://github.com/FARCER/work_template
+[https://github.com/FARCER/work_template](https://github.com/FARCER/work_template)
+
+структура стилей основана на этой статье от FreeCodeCamp: [https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f)
 
 ## Как использовать:
 
@@ -78,7 +81,6 @@ https://github.com/FARCER/work_template
 ### Структура (будет обновляться время от времени)
 
 ## Структура стилей (просто 7 папок):
-Основано на этой [статье от FreeCodeCamp](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f): 
 
 1. **_base:_** in here, put all your boilerplate code. By boilerplate, I mean all CSS code you’re gonna write each time you’ll start a new project. For example: typography rules, animations, utilities (by utilities, I mean classes like **margin-right-large** , **text-center** , …) and so on.
 
