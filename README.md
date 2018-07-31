@@ -18,9 +18,9 @@ styles structure based on this article by FreeCodeCamp: [https://medium.freecode
 
 3. Run the template: **gulp**.
 
-### Structure (it will be updates from time to time)
+## Structure desctiption (it will be updates from time to time)
 
-## The Styles structure (it just 7 folders):
+### The Styles structure (it just 7 folders):
 
 1. **_base:_** in here, put all your boilerplate code. By boilerplate, I mean all CSS code you’re gonna write each time you’ll start a new project. For example: typography rules, animations, utilities (by utilities, I mean classes like **margin-right-large** , **text-center** , …) and so on.
 
@@ -52,7 +52,7 @@ styles structure based on this article by FreeCodeCamp: [https://medium.freecode
 ...
 ```
 
-## The Pug-files structure is similar to the Styles structure
+### The Pug-files structure is similar to the Styles structure
 
 ---
 
@@ -78,9 +78,9 @@ styles structure based on this article by FreeCodeCamp: [https://medium.freecode
 
 3. Запуск шаблона: **gulp**.
 
-### Структура (будет обновляться время от времени)
+## Описание структуры (будет обновляться время от времени)
 
-## Структура стилей (просто 7 папок):
+### Структура стилей (просто 7 папок):
 
 1. **_base:_** in here, put all your boilerplate code. By boilerplate, I mean all CSS code you’re gonna write each time you’ll start a new project. For example: typography rules, animations, utilities (by utilities, I mean classes like **margin-right-large** , **text-center** , …) and so on.
 
