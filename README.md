@@ -10,13 +10,17 @@ This is template for front-end projects (HTML, CSS, JS) with Bootstrap 4 (grid &
 
 styles structure based on this article by FreeCodeCamp: [https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f)
 
+repository of this article's template (in future I want to make starter-tamplate based on this template) : [https://github.com/thomlom/scss-boilerplate](https://github.com/thomlom/scss-boilerplate)
+
 ## How to use
 
 1. [Download](https://github.com/haseri/starter-html-template/archive/master.zip) **this template** from GitHub;
 
 2. Install Node Modules: **npm i**;
 
-3. Run the template: **gulp**.
+3. Run the template: **gulp**;
+
+4. Build project: **gulp build**.
 
 ## Structure desctiption (it will be updates from time to time)
 
@@ -70,13 +74,17 @@ styles structure based on this article by FreeCodeCamp: [https://medium.freecode
 
 структура стилей основана на этой статье от FreeCodeCamp: [https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f](https://medium.freecodecamp.org/how-to-get-better-at-writing-css-a1732c32a72f)
 
+репозиторий на шаблон из этой статьи (в будущем я хочу сделать свой starter-template основанным на этом шаблоне): [https://github.com/thomlom/scss-boilerplate](https://github.com/thomlom/scss-boilerplate)
+
 ## Как использовать:
 
 1. [Скачать](https://github.com/haseri/starter-html-template/archive/master.zip) **этот шаблон** с GitHub;
 
 2. Установить Node модули: **npm i**;
 
-3. Запуск шаблона: **gulp**.
+3. Запуск шаблона: **gulp**;
+
+4. Сборка проекта: **gulp build**.
 
 ## Описание структуры (будет обновляться время от времени)
 
